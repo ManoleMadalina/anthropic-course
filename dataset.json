@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that takes an S3 bucket ARN and extracts just the bucket name from it. For example, 'arn:aws:s3:::my-bucket-name' should return 'my-bucket-name'."
+    "task": "Parse an AWS CloudWatch log entry and extract the timestamp, log level, and message using a regex pattern",
+    "format": "regex",
+    "solution_criteria": "The regex should correctly capture timestamp (ISO 8601 format), log level (INFO, ERROR, WARN, DEBUG), and the remaining message text from typical CloudWatch logs"
   },
   {
-    "task": "Create a JSON object for an AWS IAM policy that allows read-only access to a specific S3 bucket named 'company-data-bucket', including permissions to list objects and get objects."
+    "task": "Create a JSON configuration object for an AWS Lambda function that includes runtime, memory, timeout, and environment variables",
+    "format": "json",
+    "solution_criteria": "The JSON must be valid, include required Lambda configuration keys (Runtime, MemorySize, Timeout, Environment), and follow AWS Lambda function configuration schema"
   },
   {
-    "task": "Write a regex pattern that validates AWS EC2 instance IDs, which start with 'i-' followed by either 8 or 17 hexadecimal characters (e.g., 'i-1234abcd' or 'i-0123456789abcdef0')."
+    "task": "Write a Python function that takes an AWS S3 bucket name and object key and returns the S3 URI in the format s3://bucket-name/object-key",
+    "format": "python",
+    "solution_criteria": "The function should accept two parameters, validate that inputs are non-empty strings, and return a properly formatted S3 URI"
   }
 ]
